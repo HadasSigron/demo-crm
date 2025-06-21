@@ -40,5 +40,7 @@ jobs:
         kubectl get pods -o wide
 
     - name: Port-forward instructions
-      run: echo " To access the app, run: kubectl port-forward deployment/demo-crm 3000:3000"
+      run: |
+        echo "✅ To access the app, run:"
+        echo "kubectl port-forward deployment/demo-crm 3000:3000"
 
